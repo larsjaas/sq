@@ -15,10 +15,10 @@ lazy val buildInfoSettings = Seq(
 
 lazy val nativeBuildSettings = Seq(
   nativeLinkStubs := true,
-  Compile / mainClass := Some("sq.Main"),
+  Compile / mainClass := Some("com.github.larsjaas.sq.Main"),
   libraryDependencies ++= Seq(
-    "org.scala-lang.modules" %%% "scala-parser-combinators" % "2.1.0",
-    "com.github.scopt" %%% "scopt" % "4.0.1" // "3.6.0"
+    "org.scala-lang.modules" %%% "scala-parser-combinators" % "2.1.1",
+    "com.github.scopt" %%% "scopt" % "4.0.1"
   )
 )
 
